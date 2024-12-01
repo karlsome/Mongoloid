@@ -1,0 +1,512 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+html {
+    overscroll-behavior: none;
+  }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    overscroll-behavior: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border: 2px solid #eeeeee;
+    border-radius: 10px;
+    background-color: #003b5b;
+}
+
+
+.kensacontainer {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border: 2px solid #eeeeee;
+    border-radius: 10px;
+    background-color: #FFC240;
+}
+
+h4 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+#submit {
+    border: none;
+    background-color: orangered;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #333333;
+}
+
+#update {
+    border: none;
+    background-color: orangered;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#update:hover {
+    background-color: #333333;
+}
+
+#scan-button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Get it to line up properly */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some space around */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+
+
+#scan-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+#hatsumonoButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#hatsumonoButton {
+    background-color: #f63310; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Get it to line up properly */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some space around */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#atomonoButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#atomonoButton {
+    background-color: #f63310; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Get it to line up properly */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some space around */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#SRShatsumonoButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#SRShatsumonoButton {
+    background-color: #f63310; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Get it to line up properly */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some space around */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+
+#printLabel {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Get it to line up properly */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some space around */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#printLabel:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input:invalid {
+    border: 5px solid red;
+    color: red;
+}
+
+NGlabel {
+    display: block;
+    margin-bottom: 5px;
+    color: red;
+}
+
+.counter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.counter-box {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.plus-btn, .minus-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+}
+
+input[type="number"] {
+    width: 70px; /* Increased width */
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 10px;
+    background-color: white;
+    color: #333;
+}
+
+.card {  
+	background-color: #003b5b;  
+	padding: 20px;  
+	border: 1px solid #ddd;  
+	border-radius: 10px;  
+	margin-bottom: 20px;  
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+  }  
+
+  
+  
+  /* Checkbox Styling */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-container label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.checkbox-container label:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.checkbox-container input[type="checkbox"]:checked + label:before {
+    background-color: orangered;
+    border-color: orangered;
+}
+
+.checkbox-container label span {
+    font-size: 18px;
+}
+
+/* Container style */
+.image-container {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 600px; /* Maximum width of the container */
+    margin: auto; /* Center the container */
+    border: 2px solid #ccc; /* Optional border for the container */
+    padding: 10px; /* Optional padding for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for the container */
+}
+
+/* Image style */
+.image-container img {
+    width: 100%; /* Make the image fit within the container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove bottom space */
+}
+
+
+/* CSS code for navigation bar */
+nav {
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* CSS for checklist */
+.checklist-item {
+    display: flex;
+    align-items: center; /* Change to 'center' for better vertical alignment */
+    margin-bottom: 25px;
+    justify-content: flex-start; /* Align items to the left */
+}
+.checklist-item input {
+    margin-right: 10px;
+}
+
+/* Modal styles for scan lot button */
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#photo {
+    cursor: crosshair;
+    position: relative;
+}
+.highlight {
+    position: absolute;
+    border: 2px solid #000;
+    pointer-events: none;
+}
+.camera {
+    position: relative;
+    display: inline-block;
+}
+#highlightBox {
+    display: none;
+}
+
+
+/* styles.css */
+
+/* Initially hide the video container */
+#videoContainer.hidden {
+    display: none;
+}
+
+/* Style the video popup with a larger size */
+.video-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    width: 80%;
+    max-width: 800px;
+    height: 60%;
+    max-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+
+/* Close button style */
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.video-element.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .video-element:not(.hidden) {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-element:not(.active-video) {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  
+
+/* Show the video element when it's not hidden */
+#videoContainer:not(.hidden) .video-element {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Add a CSS class for the flashing red background */
+.flash-red {
+    animation: flash 1s infinite;
+  }
+
+  @keyframes flash {
+    0% { background-color: white; }
+    50% { background-color: red; }
+    100% { background-color: white; }
+  }
+
+/* Flashing red background for wrong kanban alert */
+.modal-content.flash-red {
+    animation: flash 1s infinite alternate;
+}
+
+/* Keyframes for flashing effect */
+@keyframes flash {
+    0% { background-color: #fefefe; color: black; } /* Normal background and text color */
+    50% { background-color: red; color: white; } /* Red background and white text */
+    100% { background-color: #fefefe; color: black; }
+
+
+}
+
+.flash-green {
+    animation: flash-green 0.5s;
+  }
+  
+@keyframes flash-green {
+from {
+    background-color: lightgreen;
+}
+to {
+    background-color: transparent;
+}
+}
+
+#boxCountDisplay {
+    text-align: center;
+    font-size: 18px;
+  }
+
+/* Close button styling */
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close-button:hover {
+    color: red;
+}
+
